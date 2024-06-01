@@ -1,0 +1,23 @@
+h1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.wrapper {
+  width: 100%;
+  padding: 20px;
+  background-color: orange;
+  margin-bottom: 20px;
+  
+  &-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  &-text {
+    text-indent: 10px;
+  }
+}
+
