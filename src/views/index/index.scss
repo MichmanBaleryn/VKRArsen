@@ -1,15 +1,18 @@
+@import "@/assets/variables.scss";
 h1 {
   display: flex;
-  width: 100%;
   justify-content: space-around;
-  margin-bottom: 20px;
+  background-color: $orange;
+  width: max-content;
+  margin: 20px auto;
 }
 .wrapper {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   padding: 20px;
-  background-color: orange;
+  background-color: $orange;
   margin-bottom: 20px;
-  
+
   &-title {
     display: flex;
     width: 100%;
@@ -20,4 +23,3 @@ h1 {
     text-indent: 10px;
   }
 }
-

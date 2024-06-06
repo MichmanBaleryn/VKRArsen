@@ -1,0 +1,63 @@
+@import "@/assets/variables.scss";
+.model-main {
+  &-container {
+    position: relative;
+    top: 150px;
+    margin-left: 70px;
+  }
+  &-img {
+    border: 5px solid transparent;
+    position: absolute;
+    &-active {
+      border: 5px solid $orange;
+    }
+    &:nth-child(1) {
+      z-index: 1;
+      width: 500px;
+    }
+    &:nth-child(2) {
+      z-index: 2;
+      width: 140px;
+      top: 124px;
+      left: 210px;
+    }
+    &:nth-child(3) {
+      z-index: 2;
+      width: 300px;
+      top: 410px;
+      left: 30px;
+    }
+    &:nth-child(4) {
+      z-index: 2;
+      width: 280px;
+      rotate: 90deg;
+      top: 140px;
+      left: 285px;
+    }
+    &:nth-child(5) {
+      z-index: 2;
+      width: 100px;
+      display: none;
+    } 
+    
+  }
+  
+}
+.nav {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  &-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style-type: none;
+    background-color: $orange;
+  }
+  &-li {
+    padding: 5px;
+    &:hover {
+      color: white;
+    }
+  }
+}

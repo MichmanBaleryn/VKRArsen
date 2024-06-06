@@ -8,11 +8,20 @@ const props = defineProps({
     type: String,
     require: true,
   },
+  sideIsRight: {
+    type: Boolean,
+    default: true,
+  },
 });
 </script>
 
 <template>
-  <router-link :to="link" class="button">{{ text }}</router-link>
+  <router-link
+    :to="link"
+    class="button"
+    :class="{ 'button-left': !sideIsRight }"
+    >{{ text }}</router-link
+  >
 </template>
 <style>
 @import url("./index.scss");
