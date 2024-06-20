@@ -1,13 +1,24 @@
+@import "@/assets/variables.scss";
 .button {
-  background-color: rgb(0, 183, 255);
+  background-color: $button;
   color: white;
   padding: 10px;
   text-decoration: unset;
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
+  position: fixed;
   &-left {
     right: unset;
     left: 20px;
+  }
+  &-top {
+    bottom: unset;
+    top: 20px;
+  }
+  &-right {
+    left: unset;
+    right: 20px;
+  }
+  &-bottom {
+    top: unset;
+    bottom: 20px;
   }
 }

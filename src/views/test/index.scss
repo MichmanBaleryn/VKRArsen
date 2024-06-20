@@ -1,0 +1,32 @@
+@import "@/assets/variables.scss";
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: $orange;
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+
+  &-question {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    &-p {
+        font-size: 28px;
+    }
+    &-variant {
+      display: flex;
+      gap: 9px;
+    }
+  }
+  &-btn {
+    margin-top: 10px;
+    border: unset;
+    height: 30px;
+    transition: transform 0.5s;
+    &:active{
+      transform: translateY(-6px);
+    }
+  }
+}

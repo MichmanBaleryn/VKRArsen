@@ -1,0 +1,21 @@
+@import "@/assets/variables.scss";
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: $orange;
+  width: 31.25vw;
+  margin: 20px auto;
+  padding: 20px;
+
+  &-input {
+    height: 30px;
+    border: unset;
+    outline: unset !important;
+  }
+  &-btn {
+    margin-top: 10px;
+    border: unset;
+    height: 30px;
+  }
+}

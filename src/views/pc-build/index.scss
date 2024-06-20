@@ -1,0 +1,41 @@
+@import "@/assets/variables.scss";
+
+.wrapper {
+  &__content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  &__caption {
+    font-size: 20px;
+  }
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+    &-item {
+    }
+  }
+  &__imgs {
+    display: grid;
+    gap: 10px;
+    // grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(calc(100% / 3), 1fr));
+    margin-bottom: 20px;
+    &-item {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__buttons {
+    display: flex;
+    gap: 10px;
+    &-item {
+      background-color: $button;
+      color: white;
+      padding: 10px;
+    }
+  }
+}

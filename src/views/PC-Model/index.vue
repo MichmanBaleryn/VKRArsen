@@ -1,10 +1,10 @@
 <script setup>
 import { ref } from "vue";
-import motherboard from "@/assets/images/mb.jpg";
-import cpu from "@/assets/images/cpu.jpg"
-import gpu from "@/assets/images/gpu.jpg"
-import ram from "@/assets/images/ram.jpg"
-import hdd from "@/assets/images/hdd.jpg"
+import motherboard from "@/assets/images/mb/mb.jpg";
+import cpu from "@/assets/images/cpu/cpu.jpg"
+import gpu from "@/assets/images/gpu/gpu.png"
+import ram from "@/assets/images/ram/ram.jpg"
+import hdd from "@/assets/images/hdd/hdd.jpg"
 import AppButton from "@/components/AppButton/index.vue";
 const components = [
 {
@@ -27,8 +27,6 @@ const components = [
     link: "/ram",
     img:ram
   },
-
-
   {
     text: "Переферийные устройства",
     link: "/inop",

@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url("@/assets/images/background.webp");
+  background-color: #6eb983;
   background-size: cover;
   background-repeat: no-repeat;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-variant: normal;
   font-weight: 300;
   text-transform: none;
@@ -16,4 +16,8 @@ body {
 a {
   color: unset;
   text-decoration: none;
+}
+button {
+  outline: none;
+  border: none;
 }

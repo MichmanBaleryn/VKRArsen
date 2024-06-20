@@ -1,20 +1,39 @@
 <script setup>
 import AppButton from "@/components/AppButton/index.vue";
-</script>
 
+const links = [
+  {
+    text: "Введение",
+    link: "/begin",
+  },
+  {
+    text: "Устройство ПК",
+    link: "/pc-model",
+  },
+  {
+    text: "Сборка ПК",
+    link: "/pc-build",
+  },
+];
+</script>
 <template>
-  <main>
-    <h1>Устройство компьютера</h1>
-    <div class="wrapper">
-      <h2 class="wrapper-title">Вводная часть</h2>
-      <p class="wrapper-text">
-        Данные — это записанная (зафиксированная) информация.
-      </p>
-    </div>
-    <AppButton text="Продолжить" link="/pc-model" />
-    <AppButton text="Перейти к тесту" link="/test" :side-is-right="false" />
+  <main class="main">
+    <h1 class="main__title">Устройство компьютера для 7 классов</h1>
+    <ul class="main__list">
+      <li class="main__list-item" v-for="(item, index) in links" :key="index">
+        <router-link :to="item.link" class="main__list-item-link">
+          {{ item.text }}
+        </router-link>
+      </li>
+    </ul>
+    <AppButton
+      text="Войти и пройти тест"
+      link="/test"
+      :side-horizontal="'bottom'"
+      :side-vertical="'left'"
+    />
   </main>
 </template>
 <style>
-@import url("./index.scss");
+@import "./index.scss";
 </style>

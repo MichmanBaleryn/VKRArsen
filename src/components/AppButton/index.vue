@@ -8,9 +8,13 @@ const props = defineProps({
     type: String,
     require: true,
   },
-  sideIsRight: {
-    type: Boolean,
-    default: true,
+  sideHorizontal: {
+    type: String,
+    default: "bottom",
+  },
+  sideVertical: {
+    type: String,
+    default: "right",
   },
 });
 </script>
@@ -19,7 +23,12 @@ const props = defineProps({
   <router-link
     :to="link"
     class="button"
-    :class="{ 'button-left': !sideIsRight }"
+    :class="{
+      'button-left': sideVertical === 'left',
+      'button-top': sideHorizontal === 'top',
+      'button-bottom': sideHorizontal === 'bottom',
+      'button-right': sideVertical === 'right',
+    }"
     >{{ text }}</router-link
   >
 </template>
